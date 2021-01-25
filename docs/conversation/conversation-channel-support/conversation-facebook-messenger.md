@@ -23,7 +23,7 @@ Conversation API supports Facebook Messenger and allows sending messages from Fa
 
 - Go back to the **Messenger Setup** page. Now click **Add or Remove pages** in the **Access Tokens** section. Select the previously created page and link it to your app (just **Next**, **Done**, **Ok**).
 
-- You should now see a table row in a table in the **Access Tokens** modal. Click on **Generate Token** for that row. Copy this token (from now on referred as **FACEBOOK_PAGE_TOKEN**) and save it somewhere safe. This is the access token that you need to specify when setting up a Conversation API **app**.
+- You should now see a table row in a table in the **Access Tokens** model. Click on **Generate Token** for that row. Copy this token (from now on referred as **FACEBOOK_PAGE_TOKEN**) and save it somewhere safe. This is the access token that you need to specify when setting up a Conversation API **app**.
 
 - Then you need to configure a Messenger integration for your Conversation API **app**. The easiest way to do that is to use [Sinch Portal](https://dashboard.sinch.com/convapi/overview). Just select your **app** and click on "SET UP CHANNEL" beside the Messenger channel. Alternatively you can use the management API and specify the `channel_credentials` for Facebook Messenger when creating or updating your app. Example channel configuration is given in the snippet below:
 
@@ -47,7 +47,7 @@ Conversation API supports Facebook Messenger and allows sending messages from Fa
 >
 > This can be done via the portal when configuring your Facebook Messenger channel, or by adding `"callback_secret": "<string>"` to the `"channel_credentials"` object in the snippet above.
 >
-> The secret for this validation in the case of Facebook Messenger is you App Secret from you Facebook Page.
+> The secret for this validation in the case of Facebook Messenger is you App Secret from your Facebook Page.
 
 - Once you have created Conversation API App, go back to Facebook **Messenger Setup** page, find **Webhooks** section (just below **Access Tokens**), click **Add Callback URL** button and fill in with the following data (**remember to put region (eu1 or us1) and your Conversation App ID in the callback url**): 
   
