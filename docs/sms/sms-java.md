@@ -34,7 +34,7 @@ To use java, [install our Java library](doc:sms-java-library)
               SinchSMSApi.batchTextSms()
                   .sender("{your free test number}")
                   .addRecipient(RECIPIENTS)
-                  .body("This is a test message!")
+                  .body("This is an example message!")
                   .build());
 
       System.out.println("Successfully sent batch " + batch.id());
